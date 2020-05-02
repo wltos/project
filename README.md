@@ -13,8 +13,8 @@
 - golang
 
 # 我的设计
-![avatar](https://github.com/wltos/project/tree/feature/WeiBoTop/20200502_01.png)
+![avatar](https://github.com/wltos/project/tree/feature/WeiBoTop/img/20200502_01.png)
 
 # 效果图
-![avatar](https://github.com/wltos/project/tree/feature/WeiBoTop/20200502_02.png)
-![avatar](https://github.com/wltos/project/tree/feature/WeiBoTop/20200502_03.png)
+![avatar](https://github.com/wltos/project/tree/feature/WeiBoTop/img/20200502_02.png)
+![avatar](https://github.com/wltos/project/tree/feature/WeiBoTop/img/20200502_03.png)
