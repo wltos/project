@@ -29,9 +29,9 @@ Key="改成你自己的SCKEY"
 // 运行
 > go run main.go
 ```
-# 五、效果图
-## 5.1 推送
+# 六、效果图
+## 6.1 推送
 ![推送](https://github.com/wltos/project/blob/feature/wei-bo-top/assets/20200502_02.jpg?raw=true)
 
-## 5.2 推送详情
+## 6.2 推送详情
 ![推送详情](https://github.com/wltos/project/blob/feature/wei-bo-top/assets/20200502_03.jpg?raw=true)
