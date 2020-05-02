@@ -13,8 +13,8 @@
 - golang
 
 # 我的设计
-![avatar](/img/20200502_01.png)
+![avatar](./img/20200502_01.jpg)
 
 # 效果图
-![avatar](/img/20200502_02.png)
-![avatar](/img/20200502_03.png)
+![avatar](./img/20200502_02.jpg)
+![avatar](./img/20200502_03.jpg)
