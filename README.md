@@ -15,6 +15,20 @@
 # 四、架构图
 ![架构图](https://github.com/wltos/project/blob/feature/wei-bo-top/assets/20200502_01.jpg?raw=true)
 
+# 五、运行程序
+```
+// 下载
+> git clone https://github.com/wltos/project.git
+> cd project
+> git checkout feature/wei-bo-top
+
+// 修改
+> vi /configure/default.toml
+Key="改成你自己的SCKEY"
+
+// 运行
+> go run main.go
+```
 # 五、效果图
 ## 5.1 推送
 ![推送](https://github.com/wltos/project/blob/feature/wei-bo-top/assets/20200502_02.jpg?raw=true)
