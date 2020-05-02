@@ -1,7 +1,7 @@
 # 简介
 最近，我无意中看到了一个好玩的项目，即“Server酱”。于是，我把它跟爬虫技术结合到了一起，然后就有了本项目——微博热搜自动推送程序。
 
-# 心得
+# 开发心得
 1. 准备好github账号，用它换取SCKEY。有了SCKEY方可使用Server酱的推送服务；
 2. 准备好微信，扫码绑定；
 3. Golang知识，因为本程序是golang写成。理论上你只需换一个SCKEY即可上线；
@@ -12,9 +12,9 @@
 - [ServerChan](http://sc.ftqq.com/3.version)
 - golang
 
-# 我的设计
-![avatar](/img/20200502_01.jpg)
+# 架构图
+![架构图](https://github.com/[wltos]/[project]/blob/[feature/WeiBoTop]/20200502_01.jpg?raw=true)
 
 # 效果图
-![avatar](/img/20200502_02.jpg)
-![avatar](/img/20200502_03.jpg)
+![推送](https://github.com/[wltos]/[project]/blob/[feature/WeiBoTop]/20200502_02.jpg?raw=true)
+![推送详情](https://github.com/[wltos]/[project]/blob/[feature/WeiBoTop]/20200502_03.jpg?raw=true)
