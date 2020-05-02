@@ -13,4 +13,4 @@
 - golang
 
 # 架构图
-![alt text](https://github.com/[wltos]/[project]/blob/[feature/WeiBoTop]/img/20200502_01.jpg?raw=true)
+![](https://github.com/wltos/project/blob/feature/WeiBoTop/img/20200502_01.jpg?raw=true)
