@@ -30,6 +30,7 @@ func (sc *ServerChan) PushMsg(text, desp string) error {
 		logs.Error("%s", err.Error())
 		return err
 	}
+	logs.Debug("%s", resp)
 
 	var result rsp
 	if err := json.Unmarshal([]byte(resp), &result); err != nil {
@@ -37,13 +38,13 @@ func (sc *ServerChan) PushMsg(text, desp string) error {
 		return err
 	}
 
-	if result.errNo == 0 || result.errMsg == "success" {
+	if result.ErrNo == 0 || result.ErrMsg == "success" {
 		logs.Debug("标题: %s", text)
 		logs.Debug("正文: %s", desp)
 		return nil
 	}
 
-	errMsg := fmt.Sprintf("推送失败: %s", result.errMsg)
+	errMsg := fmt.Sprintf("推送失败: %s", result.ErrMsg)
 	logs.Debug(errMsg)
 	return errors.New(errMsg)
 }

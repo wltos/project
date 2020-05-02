@@ -3,8 +3,10 @@ package main
 import (
 	"time"
 
+	"github.com/BurntSushi/toml"
 	"github.com/astaxie/beego/logs"
 
+	"weibotop/configure"
 	"weibotop/serverchan"
 	"weibotop/weibo"
 )
@@ -22,10 +24,17 @@ func main() {
 	duration := time.Hour
 	timer := time.NewTimer(duration)
 
+	var cfg configure.Config
+	if _, err := toml.DecodeFile("./configure/default.toml", &cfg); err != nil {
+		logs.Error("%s", err.Error())
+		return
+	}
+	logs.Debug("scKey: %s", cfg.Key)
+
 	// 初次提交
 	text := "微博热搜"
 	desp, _ := weibo.CrawlWeiBoNews()
-	sc := serverchan.NewServerChan("FILL_YOUR_SCKEY")
+	sc := serverchan.NewServerChan(cfg.Key)
 	sc.PushMsg(text, desp)
 
 	for {
