@@ -13,8 +13,4 @@
 - golang
 
 # 架构图
-![架构图](https://github.com/[wltos]/[project]/blob/[feature/WeiBoTop]/20200502_01.jpg?raw=true)
-
-# 效果图
-![推送](https://github.com/[wltos]/[project]/blob/[feature/WeiBoTop]/20200502_02.jpg?raw=true)
-![推送详情](https://github.com/[wltos]/[project]/blob/[feature/WeiBoTop]/20200502_03.jpg?raw=true)
+![alt text](https://github.com/[wltos]/[project]/blob/[feature/WeiBoTop]/img/20200502_01.jpg?raw=true)
