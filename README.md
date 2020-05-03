@@ -3,3 +3,4 @@
 
 # 项目列表
 - [自动推送微博热点新闻](https://github.com/wltos/project/tree/feature/wei-bo-top)
+- [易方达基金报表制作](https://github.com/wltos/project/tree/feature/eastmoney)
