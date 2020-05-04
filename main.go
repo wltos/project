@@ -6,6 +6,7 @@ import (
 	"github.com/BurntSushi/toml"
 	"github.com/astaxie/beego/logs"
 
+	"weibotop/baidu"
 	"weibotop/configure"
 	"weibotop/serverchan"
 	"weibotop/weibo"
@@ -21,7 +22,7 @@ func init() {
 }
 
 func main() {
-	duration := time.Hour
+	duration := time.Hour / 2
 	timer := time.NewTimer(duration)
 
 	var cfg configure.Config
@@ -31,20 +32,25 @@ func main() {
 	}
 	logs.Debug("scKey: %s", cfg.Key)
 
-	// 初次提交
-	text := "微博热搜"
-	desp, _ := weibo.CrawlWeiBoNews()
 	sc := serverchan.NewServerChan(cfg.Key)
-	sc.PushMsg(text, desp)
+	//
+	titleWeibo := "微博热搜"
+	newsWeibo, _ := weibo.CrawlWeiBoNews()
+	sc.PushMsg(titleWeibo, newsWeibo)
+	//
+	titleBidu := "百度热搜"
+	newsBaidu, _ := baidu.CrawlBaiduNews()
+	sc.PushMsg(titleBidu, newsBaidu)
 
 	for {
 		select {
 		case <-timer.C:
-			desp, _ := weibo.CrawlWeiBoNews()
-			if err := sc.PushMsg(text, desp); err != nil {
-				logs.Error("%s", err.Error())
-			}
-
+			newsWeibo, _ := weibo.CrawlWeiBoNews()
+			sc.PushMsg(titleWeibo, newsWeibo)
+			//
+			newsBaidu, _ := baidu.CrawlBaiduNews()
+			sc.PushMsg(titleBidu, newsBaidu)
+			//
 			timer.Reset(duration)
 		default:
 			continue
