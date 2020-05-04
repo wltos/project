@@ -1,5 +1,5 @@
 # 简介
-自娱自乐，给自己开发的一些小项目
+给自己和朋友开发的一些实用小项目，记录生活的点滴。项目以分支名区分
 
 # 项目列表
 - [热点新闻推送](https://github.com/wltos/project/tree/feature/news)
