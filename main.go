@@ -6,10 +6,10 @@ import (
 	"github.com/BurntSushi/toml"
 	"github.com/astaxie/beego/logs"
 
-	"weibotop/baidu"
-	"weibotop/configure"
-	"weibotop/serverchan"
-	"weibotop/weibo"
+	"news/baidu"
+	"news/configure"
+	"news/serverchan"
+	"news/weibo"
 )
 
 func init() {

@@ -4,10 +4,11 @@ import (
 	"fmt"
 	"log"
 	"strings"
-	"weibotop/utils"
 
 	"github.com/PuerkitoBio/goquery"
 	"github.com/astaxie/beego/httplib"
+
+	"news/utils"
 )
 
 // CrawlBaiduNews 采集百度热搜数据
