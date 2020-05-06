@@ -9,8 +9,10 @@
 5. Server酱的官网的A&Q里指出，它并不是无限使用的。我初略算了下，一天最多请求1000次，也就是最多2分钟请求一次，如果大于这个频率，会被Server酱拉黑，解除的途径是向作者支付50块罚款或者换账号。对于这一点，我建议用redis加持一下，统计推送次数，隔夜清零。
 
 # 三、采用的技术栈
-- [ServerChan](http://sc.ftqq.com/3.version)
-- Golang
+| 序号 | 组件名 | 描述 |
+| ------ | ------ | ------ |
+| 1 | [ServerChan](http://sc.ftqq.com/3.version) | 第三方消息推送服务(免费) |
+| 2 | Go | 编程语言 |
 
 # 四、架构图
 ![架构图](https://github.com/wltos/project/blob/feature/news/assets/20200502_01.jpg?raw=true)
