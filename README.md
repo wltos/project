@@ -13,6 +13,8 @@
 | ------ | ------ | ------ |
 | 1 | AccessTokenService | token服务 |
 | 2 | API-Proxy | 功能调用, 即把微信官方SDK再包一层供应用调用 |
+
+# 官方推荐的架构
 ![建议参考框架](https://github.com/wltos/project/blob/feature/weixin/assets/20200506_01.jpg?raw=true)
 
 # 注意事项
