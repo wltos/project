@@ -13,7 +13,7 @@
 - Golang
 
 # 四、架构图
-![架构图](https://github.com/wltos/project/blob/feature/wei-bo-top/assets/20200502_01.jpg?raw=true)
+![架构图](https://github.com/wltos/project/blob/feature/news/assets/20200502_01.jpg?raw=true)
 
 # 五、运行程序
 ```
@@ -31,9 +31,9 @@ Key="改成你自己的SCKEY"
 ```
 # 六、效果图
 ## 6.1 推送
-![推送](https://github.com/wltos/project/blob/feature/wei-bo-top/assets/20200502_02.jpg?raw=true)
+![推送](https://github.com/wltos/project/blob/feature/news/assets/20200502_02.jpg?raw=true)
 
 ## 6.2 推送详情
-![推送详情](https://github.com/wltos/project/blob/feature/wei-bo-top/assets/20200502_03.jpg?raw=true)
+![推送详情](https://github.com/wltos/project/blob/feature/news/assets/20200502_03.jpg?raw=true)
 
 
