@@ -67,8 +67,14 @@ func WXCallBack(c *gin.Context) {
 	c.String(200, string("success"))
 }
 
+// Ping 心跳测试
+func Ping(c *gin.Context) {
+	c.JSON(200, gin.H{"ping": "pong"})
+}
+
 func main() {
 	r := gin.Default()
 	r.POST("/wx", WXCallBack)
+	r.Any("/", Ping)
 	r.Run(":80")
 }
