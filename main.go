@@ -56,10 +56,12 @@ func WXCallBack(c *gin.Context) {
 
 	textRequestBody := parseTextReqestBody(data)
 	if textRequestBody != nil {
-		log.Printf("wechat: recv text msg [%s] from user [%s]!\n", textRequestBody.Content, textRequestBody.FromUserName)
-		responseTextBody, _ := makeTextResponseBody(textRequestBody.ToUserName, textRequestBody.FromUserName, "Hello, "+textRequestBody.FromUserName)
-		log.Printf("responseTextBody: %s", string(responseTextBody))
-		c.String(200, string(responseTextBody))
+
+		if textRequestBody.FromUserName == "o8j7ms1TZnSGG9NjuVKFawT66vvU" {
+			responseTextBody, _ := makeTextResponseBody(textRequestBody.ToUserName, textRequestBody.FromUserName, "Hello, "+"小口天")
+			log.Printf("responseTextBody: %s", string(responseTextBody))
+			c.String(200, string(responseTextBody))
+		}
 	}
 
 	c.String(200, string("success"))
