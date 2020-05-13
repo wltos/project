@@ -13,9 +13,10 @@
 
 # 后台模块划分
 | 序号 | 服务名 | 描述 |
-| ------ | ------ | ------ |
-| 1 | AccessTokenService | token服务，单独做成一个服务 |
-| 2 | API-Proxy | 功能调用, 即把微信官方SDK再包一层供应用调用，单独做成服务 |
+| :-: | - | - |
+| 1 | VerifyDeveloperService | 验证开发者服务器，通过了后续才能回调 |
+| 2 | AccessTokenService | 令牌服务，单独做成一个服务 |
+| 3 | APIProxy | 功能调用, 即把微信官方SDK再包一层供应用调用，单独做成服务 |
 
 # 官方推荐的架构
 ![建议参考框架](https://github.com/wltos/project/blob/feature/weixin/assets/20200506_01.jpg?raw=true)
