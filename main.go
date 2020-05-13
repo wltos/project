@@ -67,7 +67,7 @@ func WXCallBack(c *gin.Context) {
 	c.String(200, string("success"))
 }
 
-// Ping 心跳测试
+// Ping 内网穿透测试
 func Ping(c *gin.Context) {
 	c.JSON(200, gin.H{"ping": "pong"})
 }
