@@ -1,9 +1,5 @@
 # 简介
-给自己和朋友开发的一些实用小项目。助人的同时，顺便记录下自己生活的点滴......
+女朋友是一名面向ToB的销售，昨天跟我讲一名台商有一种需求~~他觉得钉钉公有云不安全，希望把考勤数据转移到本地。
+于是，结合之前在公司学到的钉钉知识，我打算对钉钉的开发进行总结并试着操作一下考勤数据。
 
-# 项目列表
-序号 | 项目名称 |  开发状态  
-:-:|-|-
-1 | [热点新闻推送](https://github.com/wltos/project/tree/feature/news) | 完成 |
-2 | [易方达基金报表制作](https://github.com/wltos/project/tree/feature/eastmoney) | 完成 |
-3 | [微信公众号](https://github.com/wltos/project/tree/feature/weixin) | 开发中 |
+
